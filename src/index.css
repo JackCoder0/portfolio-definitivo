@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@theme {
+  --color-background: #0b1013;
+  --color-text: #d9d9d9;
+  --color-header: #3781AE50;
+  --color-primary: #3781ae;
+  --color-secondary: #265978;
+  --color-tertiary: #1a1e23;
+  --color-accent: #46a0d8;
+  --color-transparente: #46A0D850;
+
+  --font-inter: "Inter", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-fira: "Fira Code", monospace;
+  --font-ibm: "IBM Plex Mono", monospace;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-nunito bg-background text-text font-bold;
+}
+  
