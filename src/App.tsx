@@ -12,6 +12,7 @@ import { SkillsSection } from './components/SkillsSection'
 // TODO: Adicionar API Spotify
 // TODO: Adicionar API PSN
 // TODO: Adicionar O que esta codando atualmente?
+// TODO: Deixar responsivo
 
 export function App() {
   return (
