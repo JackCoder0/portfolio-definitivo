@@ -16,7 +16,7 @@ function HeaderIcon({ iconName, text, href, hoverColor }: HeaderIconProps) {
     <a
       href={href}
       target="_blank"
-      className={`flex items-center gap-2 p-1 text-sm font-bold text-white no-underline transition-colors duration-300 hover:${hoverColor}`}
+      className={`text-text flex items-center gap-2 p-1 text-sm font-bold no-underline transition-colors duration-300 ${hoverColor}`}
       rel="noopener noreferrer"
     >
       <LucideIcon size={20} />
@@ -31,19 +31,19 @@ export function Header() {
       iconName: 'Github',
       href: 'https://github.com/seuusuario',
       text: 'GitHub',
-      hoverColor: 'text-zinc-400',
+      hoverColor: 'hover:text-zinc-400',
     },
     {
       iconName: 'Instagram',
       href: 'https://instagram.com/seuusuario',
       text: 'Instagram',
-      hoverColor: 'text-pink-500',
+      hoverColor: 'hover:text-pink-500',
     },
     {
       iconName: 'Linkedin',
       href: 'https://linkedin.com/in/seuusuario',
       text: 'LinkedIn',
-      hoverColor: 'text-sky-600',
+      hoverColor: 'hover:text-sky-600',
     },
   ]
 

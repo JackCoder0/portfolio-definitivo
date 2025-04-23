@@ -71,7 +71,7 @@ export function EducationSection() {
       id="career"
       className="flex flex-col items-center justify-center gap-8 p-8 text-center sm:p-16"
     >
-      <TitleContainer text="💼 Carreira" />
+      <TitleContainer iconName="Monitor" text="Carreira" />
 
       <div className="flex gap-15">
         <div className="education">

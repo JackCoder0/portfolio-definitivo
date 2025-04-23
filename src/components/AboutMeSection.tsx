@@ -28,7 +28,7 @@ export function AboutMeSection() {
   return (
     <div className="flex items-center justify-around gap-8 p-16" id="aboutMe">
       <div className="flex flex-col items-center justify-center gap-5 text-center">
-        <TitleContainer text="🧐 Sobre mim" />
+        <TitleContainer iconName="CircleUser" text="Sobre mim" />
 
         <div className="flex w-[80%] flex-col gap-4">
           {aboutMeParagraphs.map((text, index) => (

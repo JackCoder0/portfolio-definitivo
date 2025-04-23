@@ -19,7 +19,7 @@ export function Navbar() {
     { icon: Monitor, name: 'Carreira', href: '#career' },
     // { icon: GraduationCap, name: 'Educação', href: '#education' },
     // { icon: Monitor, name: 'Experiências', href: '#experience' },
-    { icon: CodeXml, name: 'Habilidades', href: '#skills' },
+    { icon: CodeXml, name: 'Skills', href: '#skills' },
     { icon: FileCode, name: 'Projetos', href: '#projects' },
     { icon: Mail, name: 'Contato', href: '#contact' },
   ]

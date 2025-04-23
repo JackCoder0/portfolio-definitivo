@@ -13,9 +13,9 @@ export function HomeSection() {
   ]
 
   return (
-    <div className="flex items-center justify-around gap-8 p-16" id="home">
+    <div className="flex items-center justify-around gap-8 p-16">
       <div className="flex flex-col items-center justify-center gap-4 text-center">
-        <TitleContainer text="👋 Saudações!" />
+        <TitleContainer iconName="Hand" text="Saudações!" />
 
         <div>
           <h1 className="m-4 text-3xl">JACKSON SILVA</h1>
