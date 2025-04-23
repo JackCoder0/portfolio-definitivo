@@ -90,7 +90,7 @@ export function EducationSection() {
 
         <div className="carrer">
           <div>
-            <h1>Área profissional</h1>
+            <h1>Profissional</h1>
             <p>2024 - Atualmente</p>
           </div>
           <div

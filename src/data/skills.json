@@ -1,0 +1,227 @@
+[
+  {
+    "type": "front",
+    "iconName": "MonitorSmartphone",
+    "stacks": [
+      {
+        "name": "HTML",
+        "icon": "SiHtml5",
+        "url": "https://developer.mozilla.org/docs/Web/HTML"
+      },
+      {
+        "name": "CSS",
+        "icon": "SiCss3",
+        "url": "https://developer.mozilla.org/docs/Web/CSS"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "SiJavascript",
+        "url": "https://developer.mozilla.org/docs/Web/JavaScript"
+      },
+      {
+        "name": "JQuery",
+        "icon": "SiJquery",
+        "url": "https://jquery.com/"
+      },
+      {
+        "name": "React",
+        "icon": "SiReact",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "Next.js",
+        "icon": "SiNextdotjs",
+        "url": "https://nextjs.org"
+      },
+      {
+        "name": "BootStrap",
+        "icon": "SiBootstrap",
+        "url": "https://getbootstrap.com/"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "SiTailwindcss",
+        "url": "https://tailwindcss.com"
+      },
+      {
+        "name": "MUI",
+        "icon": "SiMui",
+        "url": "https://mui.com"
+      },
+      {
+        "name": "Shadcn/ui",
+        "icon": "SiShadcnui",
+        "url": "https://ui.shadcn.dev"
+      },
+      {
+        "name": "Zustand",
+        "icon": "SiZustand",
+        "url": "https://docs.pmnd.rs/zustand"
+      }
+    ]
+  },
+  {
+    "type": "back",
+    "iconName": "Server",
+    "stacks": [
+      {
+        "name": "Python",
+        "icon": "SiPython",
+        "url": "https://www.python.org/"
+      },
+      {
+        "name": "FastAPI",
+        "icon": "SiFastapi",
+        "url": "https://fastapi.tiangolo.com/"
+      },
+      {
+        "name": "C#",
+        "icon": "CsharpPlain",
+        "url": "https://learn.microsoft.com/pt-br/dotnet/csharp/"
+      },
+      {
+        "name": "ASP.NET",
+        "icon": "DotnetcoreOriginal",
+        "url": "https://dotnet.microsoft.com/pt-br/learn/aspnet/blazor-tutorial/intro"
+      },
+      {
+        "name": ".NET",
+        "icon": "DotnetcoreOriginal",
+        "url": "https://dotnet.microsoft.com/pt-br/learn"
+      },
+      {
+        "name": "Node.JS",
+        "icon": "SiNodedotjs",
+        "url": "https://nodejs.org/pt"
+      },
+      {
+        "name": "MySql",
+        "icon": "SiMysql",
+        "url": "https://www.mysql.com/"
+      },
+      {
+        "name": "Firebase",
+        "icon": "SiFirebase",
+        "url": "https://nodejs.org/pt"
+      },
+      {
+        "name": "PL/SQL ORACLE",
+        "icon": "SiOracle",
+        "url": "https://nodejs.org/pt"
+      }
+    ]
+  },
+  {
+    "type": "full",
+    "iconName": "Layers",
+    "stacks": [
+      {
+        "name": "TypeScript",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "Next.js",
+        "icon": "SiNextdotjs",
+        "url": "https://nextjs.org"
+      },
+      {
+        "name": "ASP.NET",
+        "icon": "DotnetcoreOriginal",
+        "url": "https://dotnet.microsoft.com/pt-br/learn/aspnet/blazor-tutorial/intro"
+      },
+      {
+        "name": "Node.JS",
+        "icon": "SiNodedotjs",
+        "url": "https://nodejs.org/pt"
+      },
+      {
+        "name": ".NET",
+        "icon": "DotnetcoreOriginal",
+        "url": "https://dotnet.microsoft.com/pt-br/learn"
+      },
+      {
+        "name": "Zustand",
+        "icon": "SiZustand",
+        "url": "https://docs.pmnd.rs/zustand"
+      }
+    ]
+  },
+  {
+    "type": "tools",
+    "iconName": "Wrench",
+    "stacks": [
+      {
+        "name": "Git",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "GitHub",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "GitLab",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "Jest",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "Vitest",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "DevTools",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "Git",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "Vite",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "VSCode",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "Visual Studio",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      }
+    ]
+  },
+  {
+    "type": "other",
+    "iconName": "Repeat2",
+    "stacks": [
+      {
+        "name": "SCRUM",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "KANBAN",
+        "icon": "SiTypescript",
+        "url": "https://www.typescriptlang.org"
+      }
+    ]
+  }
+]
