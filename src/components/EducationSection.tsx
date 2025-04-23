@@ -4,6 +4,7 @@ import psaLogo from '@/assets/psaVerticalLogo.svg'
 import { TitleContainer } from './TitleContainer'
 
 // TODO: Colocar um hover/modal nos cards com mais informações
+// TODO: Adicionar date-fns para formatar as datas
 
 interface CardProps {
   logo: string
@@ -75,7 +76,7 @@ export function EducationSection() {
 
       <div className="flex gap-15">
         <div className="education">
-          <div>
+          <div className="mb-4">
             <h1>Acadêmica</h1>
             <p>2024 - Atualmente</p>
           </div>
@@ -89,7 +90,7 @@ export function EducationSection() {
         </div>
 
         <div className="carrer">
-          <div>
+          <div className="mb-4">
             <h1>Profissional</h1>
             <p>2024 - Atualmente</p>
           </div>
