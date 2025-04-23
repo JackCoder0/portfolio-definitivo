@@ -20,7 +20,7 @@ const educationData: CardProps[] = [
     logo: faculLogo,
     school: 'Anhanguera',
     course: 'Análise e Desenvolvimento de Sistemas',
-    date: 'Fevereiro de 2024 - Julho de 2026',
+    date: 'Fevereiro/2024 - Julho/2026',
     current: true,
   },
 ]
@@ -29,8 +29,8 @@ const workData: CardProps[] = [
   {
     logo: psaLogo,
     work: 'Prefeitura de Santo André',
-    description: 'Desenvolvedor Frontend',
-    date: 'Maio de 2024 - Atualmente',
+    description: 'Análise e Desenvolvimento de Sistemas',
+    date: 'Maio/2024 - Atualmente',
     current: true,
   },
 ]
@@ -38,15 +38,15 @@ const workData: CardProps[] = [
 function EducationCard({ course, date, school, logo, current }: CardProps) {
   return (
     <div
-      className={`flex flex-col items-center gap-2 rounded-2xl border-2 border-gray-600 p-4 shadow-md ${current ? 'bg-tertiary' : ''}`}
+      className={`flex h-[200px] flex-col items-center justify-center gap-2 rounded-2xl border-2 border-gray-600 p-4 shadow-md ${current ? 'bg-tertiary border-tertiary' : ''}`}
     >
       <img
         src={logo}
-        className="w-30 object-contain"
+        className="w-50 object-contain"
         alt={`Logo da ${school}`}
       />
-      <p className="text-lg font-semibold">{school}</p>
-      <h3 className="text-md font-semibold">{course}</h3>
+      <h1 className="text-lg font-semibold">{school}</h1>
+      <p className="text-md font-semibold">{course}</p>
       <p className="text-sm text-gray-400">{date}</p>
     </div>
   )
@@ -55,11 +55,11 @@ function EducationCard({ course, date, school, logo, current }: CardProps) {
 function WorkCard({ logo, work, date, description, current }: CardProps) {
   return (
     <div
-      className={`flex flex-col items-center gap-2 rounded-2xl border-2 border-gray-600 p-4 shadow-md ${current ? 'bg-tertiary' : ''}`}
+      className={`flex h-[200px] flex-col items-center justify-center gap-2 rounded-2xl border-2 border-gray-600 p-4 shadow-md ${current ? 'bg-tertiary border-tertiary' : ''}`}
     >
-      <img src={logo} className="w-30 object-contain" alt={`Logo da ${work}`} />
-      <p className="text-lg font-semibold">{work}</p>
-      <h3 className="text-md font-semibold">{description}</h3>
+      <img src={logo} className="w-50 object-contain" alt={`Logo da ${work}`} />
+      <h1 className="text-lg font-semibold">{work}</h1>
+      <p className="text-md font-semibold">{description}</p>
       <p className="text-sm text-gray-400">{date}</p>
     </div>
   )
