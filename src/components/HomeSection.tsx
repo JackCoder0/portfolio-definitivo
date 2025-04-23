@@ -1,5 +1,7 @@
 import Avatar2D from '@/assets/avatar2d.svg'
 
+import { TitleContainer } from './TitleContainer'
+
 // TODO: Deixar a empresa e o highlight dinamicos
 
 export function HomeSection() {
@@ -11,11 +13,9 @@ export function HomeSection() {
   ]
 
   return (
-    <>
+    <div className="flex items-center justify-around gap-8 p-16" id="home">
       <div className="flex flex-col items-center justify-center gap-4 text-center">
-        <section className="bg-transparente text-accent font-fira rounded-2xl p-4 font-bold">
-          👋 Saudações!
-        </section>
+        <TitleContainer text="👋 Saudações!" />
 
         <div>
           <h1 className="m-4 text-3xl">JACKSON SILVA</h1>
@@ -52,6 +52,6 @@ export function HomeSection() {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   )
 }

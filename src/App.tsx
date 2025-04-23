@@ -1,5 +1,6 @@
 import './index.css'
 
+import { AboutMeSection } from './components/AboutMeSection'
 import { Header } from './components/Header'
 import { HomeSection } from './components/HomeSection'
 import { Navbar } from './components/Navbar'
@@ -10,15 +11,11 @@ export function App() {
       <Header />
       <Navbar />
 
-      <div className="flex items-center justify-around gap-8 p-16" id="home">
-        {/* Home Section */}
-        <HomeSection />
-      </div>
+      {/* Home Section */}
+      <HomeSection />
 
-      <div className="flex items-center justify-around gap-8 p-16" id="aboutMe">
-        {/* About Me Section */}
-        <HomeSection />
-      </div>
+      {/* About Me Section */}
+      <AboutMeSection />
 
       <div
         className="flex items-center justify-around gap-8 p-16"
