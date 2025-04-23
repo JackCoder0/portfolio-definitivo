@@ -7,6 +7,12 @@ import { HomeSection } from './components/HomeSection'
 import { Navbar } from './components/Navbar'
 import { SkillsSection } from './components/SkillsSection'
 
+// TODO: Adicionar animações
+// TODO: Adicionar Theme Toggle
+// TODO: Adicionar API Spotify
+// TODO: Adicionar API PSN
+// TODO: Adicionar O que esta codando atualmente?
+
 export function App() {
   return (
     <div className="h-screen w-full p-10">
