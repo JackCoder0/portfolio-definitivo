@@ -1,17 +1,15 @@
-import { icons } from 'lucide-react'
-
 import logoHeader from '@/assets/Logo.svg'
 
+import { DynamicIcon } from './DynamicIcon'
+
 interface HeaderIconProps {
-  iconName: keyof typeof icons
+  iconName: any
   text: string
   href: string
   hoverColor: string
 }
 
 function HeaderIcon({ iconName, text, href, hoverColor }: HeaderIconProps) {
-  const LucideIcon = icons[iconName]
-
   return (
     <a
       href={href}
@@ -19,7 +17,7 @@ function HeaderIcon({ iconName, text, href, hoverColor }: HeaderIconProps) {
       className={`text-text flex items-center gap-2 p-1 text-sm font-bold no-underline transition-colors duration-300 ${hoverColor}`}
       rel="noopener noreferrer"
     >
-      <LucideIcon size={20} />
+      <DynamicIcon name={iconName} size={24} />
       <span>{text}</span>
     </a>
   )
@@ -28,19 +26,19 @@ function HeaderIcon({ iconName, text, href, hoverColor }: HeaderIconProps) {
 export function Header() {
   const socialLinks: HeaderIconProps[] = [
     {
-      iconName: 'Github',
+      iconName: 'FaGithub',
       href: 'https://github.com/seuusuario',
       text: 'GitHub',
-      hoverColor: 'hover:text-zinc-400',
+      hoverColor: 'hover:text-tertiary',
     },
     {
-      iconName: 'Instagram',
+      iconName: 'FaInstagram',
       href: 'https://instagram.com/seuusuario',
       text: 'Instagram',
       hoverColor: 'hover:text-pink-500',
     },
     {
-      iconName: 'Linkedin',
+      iconName: 'FaLinkedin',
       href: 'https://linkedin.com/in/seuusuario',
       text: 'LinkedIn',
       hoverColor: 'hover:text-sky-600',

@@ -5,52 +5,52 @@
     "stacks": [
       {
         "name": "HTML",
-        "icon": "SiHtml5",
+        "icon": "Html5Original",
         "url": "https://developer.mozilla.org/docs/Web/HTML"
       },
       {
         "name": "CSS",
-        "icon": "SiCss3",
+        "icon": "Css3Original",
         "url": "https://developer.mozilla.org/docs/Web/CSS"
       },
       {
         "name": "JavaScript",
-        "icon": "SiJavascript",
+        "icon": "JavascriptOriginal",
         "url": "https://developer.mozilla.org/docs/Web/JavaScript"
       },
       {
         "name": "JQuery",
-        "icon": "SiJquery",
+        "icon": "JqueryOriginal",
         "url": "https://jquery.com/"
       },
       {
         "name": "React",
-        "icon": "SiReact",
+        "icon": "ReactOriginal",
         "url": "https://react.dev"
       },
       {
         "name": "TypeScript",
-        "icon": "SiTypescript",
+        "icon": "TypescriptOriginal",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "Next.js",
-        "icon": "SiNextdotjs",
+        "icon": "NextjsOriginal",
         "url": "https://nextjs.org"
       },
       {
         "name": "BootStrap",
-        "icon": "SiBootstrap",
+        "icon": "BootstrapOriginal",
         "url": "https://getbootstrap.com/"
       },
       {
         "name": "Tailwind",
-        "icon": "SiTailwindcss",
+        "icon": "TailwindcssOriginal",
         "url": "https://tailwindcss.com"
       },
       {
         "name": "MUI",
-        "icon": "SiMui",
+        "icon": "MaterialuiOriginal",
         "url": "https://mui.com"
       },
       {
@@ -71,17 +71,17 @@
     "stacks": [
       {
         "name": "Python",
-        "icon": "SiPython",
+        "icon": "PythonPlain",
         "url": "https://www.python.org/"
       },
       {
         "name": "FastAPI",
-        "icon": "SiFastapi",
+        "icon": "FastapiOriginal",
         "url": "https://fastapi.tiangolo.com/"
       },
       {
         "name": "C#",
-        "icon": "CsharpPlain",
+        "icon": "CsharpOriginal",
         "url": "https://learn.microsoft.com/pt-br/dotnet/csharp/"
       },
       {
@@ -91,27 +91,27 @@
       },
       {
         "name": ".NET",
-        "icon": "DotnetcoreOriginal",
+        "icon": "DotNetOriginal",
         "url": "https://dotnet.microsoft.com/pt-br/learn"
       },
       {
         "name": "Node.JS",
-        "icon": "SiNodedotjs",
+        "icon": "NodejsOriginalWordmark",
         "url": "https://nodejs.org/pt"
       },
       {
         "name": "MySql",
-        "icon": "SiMysql",
+        "icon": "MysqlOriginal",
         "url": "https://www.mysql.com/"
       },
       {
         "name": "Firebase",
-        "icon": "SiFirebase",
+        "icon": "FirebaseOriginal",
         "url": "https://nodejs.org/pt"
       },
       {
         "name": "PL/SQL ORACLE",
-        "icon": "SiOracle",
+        "icon": "OracleOriginal",
         "url": "https://nodejs.org/pt"
       }
     ]
@@ -122,12 +122,12 @@
     "stacks": [
       {
         "name": "TypeScript",
-        "icon": "SiTypescript",
+        "icon": "TypescriptOriginal",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "Next.js",
-        "icon": "SiNextdotjs",
+        "icon": "NextjsOriginal",
         "url": "https://nextjs.org"
       },
       {
@@ -137,12 +137,12 @@
       },
       {
         "name": "Node.JS",
-        "icon": "SiNodedotjs",
+        "icon": "NodejsOriginalWordmark",
         "url": "https://nodejs.org/pt"
       },
       {
         "name": ".NET",
-        "icon": "DotnetcoreOriginal",
+        "icon": "DotNetOriginal",
         "url": "https://dotnet.microsoft.com/pt-br/learn"
       },
       {
@@ -158,52 +158,47 @@
     "stacks": [
       {
         "name": "Git",
-        "icon": "SiTypescript",
+        "icon": "GitOriginal",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "GitHub",
-        "icon": "SiTypescript",
+        "icon": "GithubOriginal",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "GitLab",
-        "icon": "SiTypescript",
+        "icon": "GitlabOriginal",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "Jest",
-        "icon": "SiTypescript",
+        "icon": "JestPlain",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "Vitest",
-        "icon": "SiTypescript",
+        "icon": "VitestOriginal",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "DevTools",
-        "icon": "SiTypescript",
-        "url": "https://www.typescriptlang.org"
-      },
-      {
-        "name": "Git",
-        "icon": "SiTypescript",
+        "icon": "VscTools",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "Vite",
-        "icon": "SiTypescript",
+        "icon": "VitejsOriginal",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "VSCode",
-        "icon": "SiTypescript",
+        "icon": "VscodeOriginal",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "Visual Studio",
-        "icon": "SiTypescript",
+        "icon": "VisualstudioOriginal",
         "url": "https://www.typescriptlang.org"
       }
     ]
@@ -214,12 +209,12 @@
     "stacks": [
       {
         "name": "SCRUM",
-        "icon": "SiTypescript",
+        "icon": "DiScrum",
         "url": "https://www.typescriptlang.org"
       },
       {
         "name": "KANBAN",
-        "icon": "SiTypescript",
+        "icon": "SquareKanban",
         "url": "https://www.typescriptlang.org"
       }
     ]
