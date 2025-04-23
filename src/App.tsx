@@ -5,6 +5,7 @@ import { EducationSection } from './components/EducationSection'
 import { Header } from './components/Header'
 import { HomeSection } from './components/HomeSection'
 import { Navbar } from './components/Navbar'
+import { SkillsSection } from './components/SkillsSection'
 
 export function App() {
   return (
@@ -21,10 +22,8 @@ export function App() {
       {/* Education/Experiencie Section */}
       <EducationSection />
 
-      <div className="flex items-center justify-around gap-8 p-16" id="skills">
-        {/* Skills Section */}
-        <HomeSection />
-      </div>
+      {/* Skills Section */}
+      <SkillsSection />
 
       <div
         className="flex items-center justify-around gap-8 p-16"
