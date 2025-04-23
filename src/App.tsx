@@ -12,6 +12,7 @@ import { SkillsSection } from './components/SkillsSection'
 // TODO: Adicionar API Spotify
 // TODO: Adicionar API PSN
 // TODO: Adicionar O que esta codando atualmente?
+// TODO: Adicionar LeetCode
 // TODO: Deixar responsivo
 // TODO: Quando der reload ou algo parecido manter o navbar
 // TODO: Quando der o scroll e chegar no id mudar o navbar
