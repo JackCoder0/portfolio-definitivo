@@ -18,16 +18,8 @@ export function App() {
       {/* About Me Section */}
       <AboutMeSection />
 
-      {/* Education Section */}
+      {/* Education/Experiencie Section */}
       <EducationSection />
-
-      <div
-        className="flex items-center justify-around gap-8 p-16"
-        id="experience"
-      >
-        {/* Experience Section */}
-        <HomeSection />
-      </div>
 
       <div className="flex items-center justify-around gap-8 p-16" id="skills">
         {/* Skills Section */}
