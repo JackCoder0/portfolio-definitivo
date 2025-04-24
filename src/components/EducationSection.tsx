@@ -4,7 +4,9 @@ import psaLogo from '@/assets/psaVerticalLogo.svg'
 import { TitleContainer } from './TitleContainer'
 
 // TODO: Colocar um hover/modal nos cards com mais informações
-// TODO: Adicionar date-fns para formatar as datas
+// TODO: Adicionar date-fns para adicionar o tempo de experiência e faultade
+// Prefeitura: 08/05/2024 - Atualmente
+// Anhanguera: 02/2024 - 07/2026
 
 interface CardProps {
   logo: string

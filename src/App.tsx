@@ -1,10 +1,13 @@
 import './index.css'
 
 import { AboutMeSection } from './components/AboutMeSection'
+import { ContactSection } from './components/ContactSection'
+import { DynamicIcon } from './components/DynamicIcon'
 import { EducationSection } from './components/EducationSection'
 import { Header } from './components/Header'
 import { HomeSection } from './components/HomeSection'
 import { Navbar } from './components/Navbar'
+import { ProjectsSection } from './components/ProjectSection'
 import { SkillsSection } from './components/SkillsSection'
 
 // TODO: Adicionar animações
@@ -19,34 +22,41 @@ import { SkillsSection } from './components/SkillsSection'
 
 export function App() {
   return (
-    <div className="h-screen w-full p-10" id="home">
-      <Header />
-      <Navbar />
+    <>
+      <div className="h-screen w-full p-10" id="home">
+        <Header />
+        <Navbar />
 
-      {/* Home Section */}
-      <HomeSection />
+        {/* Home Section */}
+        <HomeSection />
 
-      {/* About Me Section */}
-      <AboutMeSection />
+        {/* About Me Section */}
+        <AboutMeSection />
 
-      {/* Education/Experiencie Section */}
-      <EducationSection />
+        {/* Education/Experiencie Section */}
+        <EducationSection />
 
-      {/* Skills Section */}
-      <SkillsSection />
+        {/* Skills Section */}
+        <SkillsSection />
 
-      <div
-        className="flex items-center justify-around gap-8 p-16"
-        id="projects"
-      >
         {/* Projects Section */}
-        {/* <HomeSection /> */}
-      </div>
+        <ProjectsSection />
 
-      <div className="flex items-center justify-around gap-8 p-16" id="contact">
         {/* Contact Section */}
-        {/* <HomeSection /> */}
+        <ContactSection />
+
+        <footer className="border-primary flex h-15 items-center justify-evenly border-t">
+          <span className="font-light text-gray-500">
+            Copyright © Jackson Silva · 2025
+          </span>
+
+          <div className="flex items-center gap-2">
+            <DynamicIcon name="FaInstagram" />
+            <DynamicIcon name="FaLinkedin" />
+            <DynamicIcon name="FaGithub" />
+          </div>
+        </footer>
       </div>
-    </div>
+    </>
   )
 }

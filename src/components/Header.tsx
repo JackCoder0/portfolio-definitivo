@@ -27,19 +27,19 @@ export function Header() {
   const socialLinks: HeaderIconProps[] = [
     {
       iconName: 'FaGithub',
-      href: 'https://github.com/seuusuario',
+      href: 'https://github.com/JackCoder0',
       text: 'GitHub',
       hoverColor: 'hover:text-tertiary',
     },
     {
       iconName: 'FaInstagram',
-      href: 'https://instagram.com/seuusuario',
+      href: 'https://instagram.com/jacksilva_dev',
       text: 'Instagram',
       hoverColor: 'hover:text-pink-500',
     },
     {
       iconName: 'FaLinkedin',
-      href: 'https://linkedin.com/in/seuusuario',
+      href: 'https://www.linkedin.com/in/jackson-silva-coder/',
       text: 'LinkedIn',
       hoverColor: 'hover:text-sky-600',
     },
