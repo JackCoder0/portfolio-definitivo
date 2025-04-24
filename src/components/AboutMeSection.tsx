@@ -1,14 +1,11 @@
 import { TitleContainer } from './TitleContainer'
 
-// TODO: Atualizar o texto e deixar por JSON e dinamico
-
 const aboutMeParagraphs = [
-  'Olá! Meu nome é Jackson Antonio Silva, sou desenvolvedor de software apaixonado por tecnologia e inovação. Atualmente, estou no 3º semestre de Análise e Desenvolvimento de Sistemas, onde venho aprofundando meus conhecimentos em arquitetura de sistemas, programação e gestão de projetos.',
-  'Atuo como Desenvolvedor Web na Prefeitura Municipal de Santo André, onde contribuo diretamente para a criação e manutenção de sistemas web que otimizam processos internos, promovem eficiência e geram impacto positivo na gestão pública. Tenho experiência em lidar com desafios complexos, buscando sempre implementar soluções práticas e modernas para atender às necessidades dos usuários.',
-  'Sou motivado por desafios que envolvem aprendizado contínuo e trabalho em equipe, sempre com o objetivo de desenvolver tecnologias que façam a diferença. 🚀',
-  'Tenho experiência no desenvolvimento full stack, utilizando uma ampla variedade de tecnologias modernas, incluindo ASP.NET Core, C#, Python, JavaScript e React. Minha atuação abrange desde a criação de interfaces intuitivas até a construção de backends robustos, garantindo soluções completas e escaláveis.',
-  'Também tenho sólida experiência na integração com APIs REST, no uso de bancos de dados como Oracle PL/SQL e na aplicação de boas práticas em desenvolvimento de software. Além disso, sou adepto de metodologias ágeis, como SCRUM, para garantir eficiência, colaboração e entrega contínua de valor aos projetos.',
-  'Sou apaixonado por tecnologia e inovação, sempre buscando transformar ideias em soluções práticas, inteligentes e impactantes. Meu foco é criar aplicações que realmente façam a diferença e ofereçam experiências excepcionais para os usuários. 💡',
+  '👨‍💻 Olá! Me chamo Jackson Antonio Silva, tenho 20 anos e estou no 3º semestre de Análise e Desenvolvimento de Sistemas (ADS). Sou desenvolvedor de software apaixonado por tecnologia, inovação e criação de soluções digitais que geram impacto real.',
+  'Atualmente, atuo como Desenvolvedor Web na Prefeitura Municipal de Santo André, contribuindo diretamente para a criação e manutenção de sistemas que otimizam processos internos, promovem eficiência e transformam a gestão pública por meio da tecnologia. Tenho experiência em lidar com desafios complexos, sempre buscando implementar soluções modernas, práticas e escaláveis que atendam às reais necessidades dos usuários.',
+  'A programação, para mim, é a união perfeita entre lógica e criatividade. Meu objetivo é continuar crescendo como desenvolvedor, expandindo meus conhecimentos e contribuindo para projetos que transformem ideias em soluções inovadoras e impactantes para a sociedade.',
+  'Estou sempre buscando evoluir. Atualmente, foco em aprofundar conhecimentos em APIs, banco de dados e arquitetura full stack, especialmente com React, TypeScript e Zustand. Também estou estudando Node.js para reforçar minha atuação no back-end e, em breve, pretendo explorar Java e frameworks amplamente utilizados no mercado.',
+  'Ao longo da minha trajetória, desenvolvi competências essenciais como trabalho em equipe, comunicação interpessoal, resolução de problemas e adaptabilidade. Essas habilidades me permitem colaborar de forma eficiente em qualquer time, entender os desafios com empatia e buscar soluções que realmente façam a diferença.',
 ]
 
 const funFacts = [
@@ -21,7 +18,11 @@ const funFacts = [
 ]
 
 function AboutMeContent({ text }: { text: string }) {
-  return <div className="rounded-md border-2 border-gray-600 p-1">{text}</div>
+  return (
+    <div className="flex items-center justify-center rounded-md border-2 border-gray-600 p-1">
+      <span>{text}</span>
+    </div>
+  )
 }
 
 export function AboutMeSection() {

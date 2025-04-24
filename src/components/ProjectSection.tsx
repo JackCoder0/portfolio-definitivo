@@ -1,4 +1,4 @@
-import { ChevronsRightIcon } from 'lucide-react'
+// import { ChevronsRightIcon } from 'lucide-react'
 
 import { DynamicIcon } from './DynamicIcon'
 import { TitleContainer } from './TitleContainer'
@@ -10,6 +10,8 @@ interface ProjectCardProps {
   githubLink?: string
   imageUrl?: string
 }
+
+// TODO: Adicionar os projetos, pelo menos 3
 
 function ProjectCard({
   title,
@@ -68,12 +70,12 @@ export function ProjectsSection() {
     >
       <TitleContainer iconName="FileCode" text="Projetos" />
 
-      <div className="flex w-full items-center justify-end">
+      {/* <div className="flex w-full items-center justify-end">
         <button className="border-primary hover:bg-primary hover:text-text text-primary flex cursor-pointer items-center gap-1 rounded-md border-2 p-2 transition-all duration-300 ease-in-out">
           <span className="font-fira">Ver Todos</span>
           <ChevronsRightIcon />
         </button>
-      </div>
+      </div> */}
 
       <div className="flex w-full items-center justify-center">
         <div className="grid max-w-full grid-cols-[repeat(auto-fit,minmax(250px,1fr))] justify-center gap-8">

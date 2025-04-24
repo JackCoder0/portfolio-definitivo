@@ -35,7 +35,7 @@ export function ContactSection() {
     >
       <TitleContainer iconName="Mail" text="Contato" />
 
-      <h1>Vamos conversar!</h1>
+      <h1 className="font-roboto text-6xl">Vamos conversar!</h1>
 
       <div className="flex flex-col items-center gap-2">
         <button className="border-primary hover:bg-primary text-primary hover:text-text flex cursor-pointer items-center gap-2 rounded-2xl border-2 p-3 transition-colors duration-300">
