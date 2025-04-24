@@ -1,3 +1,5 @@
+import resume from '@/assets/Curriculo 2025.pdf'
+
 import { DynamicIcon } from './DynamicIcon'
 import { TitleContainer } from './TitleContainer'
 
@@ -38,15 +40,24 @@ export function ContactSection() {
       <h1 className="font-roboto text-6xl">Vamos conversar!</h1>
 
       <div className="flex flex-col items-center gap-2">
-        <button className="border-primary hover:bg-primary text-primary hover:text-text flex cursor-pointer items-center gap-2 rounded-2xl border-2 p-3 transition-colors duration-300">
+        <a
+          href="https://api.whatsapp.com/send?phone=5511952909057&text=Oi%20tudo%20bem%3F%20Vim%20pelo%20seu%20portfolio!"
+          target="_blank"
+          rel="noreferrer"
+          className="border-primary hover:bg-primary text-primary hover:text-text flex cursor-pointer items-center gap-2 rounded-2xl border-2 p-3 transition-colors duration-300"
+        >
           <DynamicIcon name="BsWhatsapp" size={30} />
           <span>Vamos conversar</span>
-        </button>
+        </a>
 
-        <button className="text-primary hover:text-text flex cursor-pointer items-center gap-2 rounded-2xl p-3 transition-colors duration-300">
+        <a
+          href={resume}
+          download
+          className="text-primary hover:text-text flex cursor-pointer items-center gap-2 rounded-2xl p-3 transition-colors duration-300"
+        >
           <span>Baixar CV</span>
           <DynamicIcon name="DownloadIcon" size={30} />
-        </button>
+        </a>
       </div>
 
       <div className="flex items-center justify-center gap-8">

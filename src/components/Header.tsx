@@ -59,7 +59,7 @@ export function Header() {
         ))}
       </nav>
 
-      <div>Theme Toggle</div>
+      <div></div>
     </header>
   )
 }

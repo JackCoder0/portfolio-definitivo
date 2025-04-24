@@ -2,7 +2,7 @@ import './index.css'
 
 import { AboutMeSection } from './components/AboutMeSection'
 import { ContactSection } from './components/ContactSection'
-import { DynamicIcon } from './components/DynamicIcon'
+// import { DynamicIcon } from './components/DynamicIcon'
 import { EducationSection } from './components/EducationSection'
 import { Header } from './components/Header'
 import { HomeSection } from './components/HomeSection'
@@ -50,11 +50,11 @@ export function App() {
             Copyright © Jackson Silva · 2025
           </span>
 
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <DynamicIcon name="FaInstagram" />
             <DynamicIcon name="FaLinkedin" />
             <DynamicIcon name="FaGithub" />
-          </div>
+          </div> */}
         </footer>
       </div>
     </>

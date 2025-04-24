@@ -9,6 +9,8 @@ interface ProjectCardProps {
   liveLink?: string
   githubLink?: string
   imageUrl?: string
+  stacks?: string[]
+  icons?: string[]
 }
 
 // TODO: Adicionar os projetos, pelo menos 3
@@ -19,6 +21,7 @@ function ProjectCard({
   liveLink,
   githubLink,
   imageUrl,
+  icons,
 }: ProjectCardProps) {
   return (
     <div className="border-primary flex w-full max-w-sm flex-col items-center justify-center gap-4 rounded-2xl border-2 p-4">
@@ -26,14 +29,18 @@ function ProjectCard({
         <img src={imageUrl} alt="" />
       </div>
 
-      <div className="flex items-center justify-center gap-2">
-        <div className="rounded-md bg-blue-700 p-2">
-          <DynamicIcon name="Monitor" />
+      {icons && icons.length > 0 && (
+        <div className="flex items-center justify-center gap-2">
+          {icons.map((icon, index) => (
+            <div
+              key={index}
+              className="rounded-md bg-gray-400/50 p-2 transition-transform hover:scale-105"
+            >
+              <DynamicIcon name={icon} />
+            </div>
+          ))}
         </div>
-        <div className="rounded-md bg-blue-700 p-2">
-          <DynamicIcon name="Monitor" />
-        </div>
-      </div>
+      )}
 
       <div className="flex w-full flex-col gap-4 p-2 text-center">
         <div className="flex flex-col items-center gap-2">
@@ -45,6 +52,8 @@ function ProjectCard({
         <a
           href={liveLink}
           className="bg-primary flex items-center gap-4 rounded-md p-4"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Live
           <DynamicIcon name="Globe" />
@@ -53,6 +62,8 @@ function ProjectCard({
         <a
           href={githubLink}
           className="bg-primary flex items-center gap-4 rounded-md p-4"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           GitHub
           <DynamicIcon name="Github" />
@@ -70,16 +81,28 @@ export function ProjectsSection() {
     >
       <TitleContainer iconName="FileCode" text="Projetos" />
 
-      {/* <div className="flex w-full items-center justify-end">
-        <button className="border-primary hover:bg-primary hover:text-text text-primary flex cursor-pointer items-center gap-1 rounded-md border-2 p-2 transition-all duration-300 ease-in-out">
-          <span className="font-fira">Ver Todos</span>
-          <ChevronsRightIcon />
-        </button>
-      </div> */}
-
       <div className="flex w-full items-center justify-center">
         <div className="grid max-w-full grid-cols-[repeat(auto-fit,minmax(250px,1fr))] justify-center gap-8">
-          <ProjectCard title="Nome" description="Descrição" />
+          <ProjectCard
+            title="Firebase Chat"
+            description="Um chat usando a autenticação do Firebase e o Firestore como banco de dados."
+            liveLink="https://react-chat-lovat.vercel.app/"
+            githubLink="https://github.com/JackCoder0/react-chat"
+            icons={[
+              'ReactOriginal',
+              'FirebaseOriginal',
+              'TailwindcssOriginal',
+              'VitejsOriginal',
+            ]}
+          />
+
+          <ProjectCard
+            title="DevTalk API"
+            description="Uma API RESTful usando Python e FastAPI, para um projeto da faculdade de uma plataforma de idiomas."
+            liveLink="https://github.com/JackCoder0/DevTalkAPI"
+            githubLink="https://github.com/JackCoder0/DevTalkAPI"
+            icons={['PythonOriginal', 'FastapiOriginal']}
+          />
         </div>
       </div>
     </section>
