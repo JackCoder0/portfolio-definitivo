@@ -29,7 +29,7 @@ export function Navbar() {
         // Mobile styles
         'right-0 left-0 flex flex-row items-center justify-around rounded-t-2xl p-2 max-md:bottom-0',
         // Desktop styles
-        'md:top-[30%] md:left-8 md:ml-8 md:w-14 md:flex-col md:gap-2.5 md:rounded-full md:border md:p-[17px] md:leading-none',
+        'md:top-[30%] md:left-8 md:w-14 md:flex-col md:gap-2.5 md:rounded-full md:border md:p-[17px] md:leading-none',
       )}
     >
       {iconsWithNames.map(({ icon: Icon, name, href }) => (
@@ -41,7 +41,7 @@ export function Navbar() {
           className={clsx(
             'group relative flex flex-col items-center rounded-full p-1 transition-colors duration-300',
             active === name ? 'text-white md:bg-white' : 'text-gray-500',
-            'hover:bg-white',
+            'md:hover:bg-white',
           )}
         >
           <Icon
@@ -49,13 +49,13 @@ export function Navbar() {
             className={clsx(
               'transition-colors duration-300',
               active === name ? 'md:stroke-black' : 'md:stroke-white',
-              'group-hover:stroke-black',
+              'md:group-hover:stroke-black',
             )}
           />
 
           <span className="mt-1 text-xs md:hidden">{name}</span>
 
-          <span className="font-nunito pointer-events-none absolute top-1/2 left-[150%] -translate-y-1/2 rounded-md bg-white px-4 py-2 text-sm whitespace-nowrap text-black opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+          <span className="font-nunito pointer-events-none absolute top-1/2 left-[150%] hidden -translate-y-1/2 rounded-md bg-white px-2 py-2 text-sm whitespace-nowrap text-black opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:block">
             {name}
           </span>
         </a>

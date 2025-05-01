@@ -45,7 +45,7 @@ export function App() {
         {/* Contact Section */}
         <ContactSection />
 
-        <footer className="border-primary mt-10 flex items-center justify-center border-t py-4 text-center text-sm text-gray-500">
+        <footer className="border-primary mb-18 flex items-center justify-center border-t py-4 text-center text-sm text-gray-500 md:mb-0">
           Copyright © Jackson Silva · 2025
         </footer>
       </main>
