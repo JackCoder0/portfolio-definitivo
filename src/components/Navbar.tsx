@@ -3,7 +3,6 @@ import {
   CircleUser,
   CodeXml,
   FileCode,
-  // GraduationCap,
   LayoutGrid,
   Mail,
   Monitor,
@@ -17,15 +16,22 @@ export function Navbar() {
     { icon: LayoutGrid, name: 'Home', href: '#home' },
     { icon: CircleUser, name: 'Sobre Mim', href: '#aboutMe' },
     { icon: Monitor, name: 'Carreira', href: '#career' },
-    // { icon: GraduationCap, name: 'Educação', href: '#education' },
-    // { icon: Monitor, name: 'Experiências', href: '#experience' },
+
     { icon: CodeXml, name: 'Skills', href: '#skills' },
     { icon: FileCode, name: 'Projetos', href: '#projects' },
     { icon: Mail, name: 'Contato', href: '#contact' },
   ]
 
   return (
-    <nav className="border-text bg-tertiary fixed top-[30%] z-[999] flex w-14 flex-col items-center gap-2.5 rounded-full border p-[17px] leading-none">
+    <nav
+      className={clsx(
+        'bg-tertiary border-text fixed z-[999]',
+        // Mobile styles
+        'right-0 left-0 flex flex-row items-center justify-around rounded-t-2xl p-2 max-md:bottom-0',
+        // Desktop styles
+        'md:top-[30%] md:left-8 md:ml-8 md:w-14 md:flex-col md:gap-2.5 md:rounded-full md:border md:p-[17px] md:leading-none',
+      )}
+    >
       {iconsWithNames.map(({ icon: Icon, name, href }) => (
         <a
           key={name}
@@ -33,8 +39,8 @@ export function Navbar() {
           data-name={name}
           onClick={() => setActive(name)}
           className={clsx(
-            'group relative rounded-full p-[5px] transition-colors duration-300',
-            active === name && 'bg-white',
+            'group relative flex flex-col items-center rounded-full p-1 transition-colors duration-300',
+            active === name ? 'text-white md:bg-white' : 'text-gray-500',
             'hover:bg-white',
           )}
         >
@@ -42,10 +48,13 @@ export function Navbar() {
             size={28}
             className={clsx(
               'transition-colors duration-300',
-              active === name ? 'stroke-black' : 'stroke-white',
+              active === name ? 'md:stroke-black' : 'md:stroke-white',
               'group-hover:stroke-black',
             )}
           />
+
+          <span className="mt-1 text-xs md:hidden">{name}</span>
+
           <span className="font-nunito pointer-events-none absolute top-1/2 left-[150%] -translate-y-1/2 rounded-md bg-white px-4 py-2 text-sm whitespace-nowrap text-black opacity-0 transition-opacity duration-500 group-hover:opacity-100">
             {name}
           </span>

@@ -1,14 +1,14 @@
 import './index.css'
 
-import { AboutMeSection } from './components/AboutMeSection'
-import { ContactSection } from './components/ContactSection'
-// import { DynamicIcon } from './components/DynamicIcon'
-import { EducationSection } from './components/EducationSection'
 import { Header } from './components/Header'
-import { HomeSection } from './components/HomeSection'
 import { Navbar } from './components/Navbar'
-import { ProjectsSection } from './components/ProjectSection'
-import { SkillsSection } from './components/SkillsSection'
+import { AboutMeSection } from './components/sections/AboutMeSection'
+import { ContactSection } from './components/sections/ContactSection'
+// import { DynamicIcon } from './components/DynamicIcon'
+import { EducationSection } from './components/sections/EducationSection'
+import { HomeSection } from './components/sections/HomeSection'
+import { ProjectsSection } from './components/sections/ProjectSection'
+import { SkillsSection } from './components/sections/SkillsSection'
 
 // TODO: Adicionar animações
 // TODO: Adicionar Theme Toggle
@@ -23,10 +23,10 @@ import { SkillsSection } from './components/SkillsSection'
 export function App() {
   return (
     <>
-      <div className="h-screen w-full p-10" id="home">
-        <Header />
-        <Navbar />
+      <Header />
+      <Navbar />
 
+      <main className="w-full px-4 sm:px-6 md:px-10" id="home">
         {/* Home Section */}
         <HomeSection />
 
@@ -45,18 +45,10 @@ export function App() {
         {/* Contact Section */}
         <ContactSection />
 
-        <footer className="border-primary flex h-15 items-center justify-evenly border-t">
-          <span className="font-light text-gray-500">
-            Copyright © Jackson Silva · 2025
-          </span>
-
-          {/* <div className="flex items-center gap-2">
-            <DynamicIcon name="FaInstagram" />
-            <DynamicIcon name="FaLinkedin" />
-            <DynamicIcon name="FaGithub" />
-          </div> */}
+        <footer className="border-primary mt-10 flex items-center justify-center border-t py-4 text-center text-sm text-gray-500">
+          Copyright © Jackson Silva · 2025
         </footer>
-      </div>
+      </main>
     </>
   )
 }

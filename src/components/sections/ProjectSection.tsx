@@ -1,7 +1,7 @@
 // import { ChevronsRightIcon } from 'lucide-react'
 
-import { DynamicIcon } from './DynamicIcon'
-import { TitleContainer } from './TitleContainer'
+import { DynamicIcon } from '../DynamicIcon'
+import { TitleContainer } from '../TitleContainer'
 
 interface ProjectCardProps {
   title: string

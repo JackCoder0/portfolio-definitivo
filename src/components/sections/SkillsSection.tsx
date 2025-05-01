@@ -4,7 +4,7 @@ import { StackCategory } from '@/@types/skills'
 import { DynamicIcon } from '@/components/DynamicIcon'
 import rawSkills from '@/data/skills.json'
 
-import { TitleContainer } from './TitleContainer'
+import { TitleContainer } from '../TitleContainer'
 
 // TODO: Além das que vai estudar
 // TODO: Realizei projetos e uso atualmente

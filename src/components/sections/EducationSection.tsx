@@ -1,7 +1,7 @@
 import faculLogo from '@/assets/anhangueraText.png'
 import psaLogo from '@/assets/psaVerticalLogo.svg'
 
-import { TitleContainer } from './TitleContainer'
+import { TitleContainer } from '../TitleContainer'
 
 // TODO: Colocar um hover/modal nos cards com mais informações
 // TODO: Adicionar date-fns para adicionar o tempo de experiência e faultade
@@ -41,7 +41,7 @@ const workData: CardProps[] = [
 function EducationCard({ course, date, school, logo, current }: CardProps) {
   return (
     <div
-      className={`flex h-[200px] flex-col items-center justify-center gap-2 rounded-2xl border-2 border-gray-600 p-4 shadow-md ${current ? 'bg-tertiary border-tertiary' : ''}`}
+      className={`flex h-auto min-h-[200px] flex-col items-center justify-center gap-2 rounded-2xl border-2 border-gray-600 p-4 shadow-md ${current ? 'bg-tertiary border-tertiary' : ''}`}
     >
       <img
         src={logo}
@@ -58,7 +58,7 @@ function EducationCard({ course, date, school, logo, current }: CardProps) {
 function WorkCard({ logo, work, date, description, current }: CardProps) {
   return (
     <div
-      className={`flex h-[200px] flex-col items-center justify-center gap-2 rounded-2xl border-2 border-gray-600 p-4 shadow-md ${current ? 'bg-tertiary border-tertiary' : ''}`}
+      className={`flex h-auto min-h-[200px] flex-col items-center justify-center gap-2 rounded-2xl border-2 border-gray-600 p-4 shadow-md ${current ? 'bg-tertiary border-tertiary' : ''}`}
     >
       <img src={logo} className="w-50 object-contain" alt={`Logo da ${work}`} />
       <h1 className="text-lg font-semibold">{work}</h1>
@@ -72,33 +72,33 @@ export function EducationSection() {
   return (
     <section
       id="career"
-      className="flex flex-col items-center justify-center gap-8 p-8 text-center sm:p-16"
+      className="flex flex-col items-center justify-center gap-12 px-4 py-12 sm:px-8 md:px-16"
     >
       <TitleContainer iconName="Monitor" text="Carreira" />
 
-      <div className="flex gap-15">
-        <div className="education">
-          <div className="mb-4">
-            <h1>Acadêmica</h1>
-            <p>2024 - Atualmente</p>
+      <div className="flex w-full max-w-6xl flex-col gap-12 lg:flex-row lg:items-start lg:justify-around">
+        {/* Acadêmica */}
+        <div className="flex flex-col items-center gap-4 text-center">
+          <div>
+            <h2 className="text-xl font-bold">Acadêmica</h2>
+            <p className="text-sm text-gray-400">2024 - Atualmente</p>
           </div>
-          <div
-          // className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
-          >
+
+          <div className="grid w-full max-w-md grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">
             {educationData.map((item, index) => (
               <EducationCard key={index} {...item} />
             ))}
           </div>
         </div>
 
-        <div className="carrer">
-          <div className="mb-4">
-            <h1>Profissional</h1>
-            <p>2024 - Atualmente</p>
+        {/* Profissional */}
+        <div className="flex flex-col items-center gap-4 text-center">
+          <div>
+            <h2 className="text-xl font-bold">Profissional</h2>
+            <p className="text-sm text-gray-400">2024 - Atualmente</p>
           </div>
-          <div
-          // className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
-          >
+
+          <div className="grid w-full max-w-md grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">
             {workData.map((item, index) => (
               <WorkCard key={index} {...item} />
             ))}

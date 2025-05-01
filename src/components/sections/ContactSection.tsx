@@ -1,7 +1,7 @@
-import resume from '@/assets/Curriculo 2025.pdf'
+import resume from '@/assets/Jackson Antonio Silva 2025 Currículo.pdf'
 
-import { DynamicIcon } from './DynamicIcon'
-import { TitleContainer } from './TitleContainer'
+import { DynamicIcon } from '../DynamicIcon'
+import { TitleContainer } from '../TitleContainer'
 
 interface ContactInfoProps {
   iconName: string
@@ -33,48 +33,48 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center gap-8 p-8 text-center sm:p-16"
+      className="flex flex-col items-center justify-center gap-8 px-4 py-10 text-center sm:px-8 md:px-16"
     >
       <TitleContainer iconName="Mail" text="Contato" />
 
-      <h1 className="font-roboto text-6xl">Vamos conversar!</h1>
+      <h1 className="font-roboto text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+        Vamos conversar!
+      </h1>
 
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
         <a
           href="https://api.whatsapp.com/send?phone=5511952909057&text=Oi%20tudo%20bem%3F%20Vim%20pelo%20seu%20portfolio!"
           target="_blank"
           rel="noreferrer"
-          className="border-primary hover:bg-primary text-primary hover:text-text flex cursor-pointer items-center gap-2 rounded-2xl border-2 p-3 transition-colors duration-300"
+          className="border-primary hover:bg-primary text-primary hover:text-text flex items-center gap-2 rounded-2xl border-2 px-6 py-3 text-base transition-colors duration-300"
         >
-          <DynamicIcon name="BsWhatsapp" size={30} />
+          <DynamicIcon name="BsWhatsapp" size={24} />
           <span>Vamos conversar</span>
         </a>
 
         <a
           href={resume}
           download
-          className="text-primary hover:text-text flex cursor-pointer items-center gap-2 rounded-2xl p-3 transition-colors duration-300"
+          className="text-primary hover:text-text flex items-center gap-2 rounded-2xl px-6 py-3 text-base transition-colors duration-300"
         >
           <span>Baixar CV</span>
-          <DynamicIcon name="DownloadIcon" size={30} />
+          <DynamicIcon name="DownloadIcon" size={24} />
         </a>
       </div>
 
-      <div className="flex items-center justify-center gap-8">
+      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
         <ContactInfo
           iconName="Send"
           text="E-mail:"
           nickname="jacksonxcontato13"
           link="mailto:jacksonxcontato13@gmail.com"
         />
-
         <ContactInfo
           iconName="FaLinkedin"
           text="Linkedin:"
           nickname="@jackson-silva-coder"
           link="https://www.linkedin.com/in/jackson-silva-coder/"
         />
-
         <ContactInfo
           iconName="FaGithub"
           text="GitHub:"

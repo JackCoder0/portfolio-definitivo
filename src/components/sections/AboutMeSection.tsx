@@ -1,4 +1,4 @@
-import { TitleContainer } from './TitleContainer'
+import { TitleContainer } from '../TitleContainer'
 
 const aboutMeParagraphs = [
   '👨‍💻 Olá! Me chamo Jackson Antonio Silva, tenho 20 anos e estou no 3º semestre de Análise e Desenvolvimento de Sistemas (ADS). Sou desenvolvedor de software apaixonado por tecnologia, inovação e criação de soluções digitais que geram impacto real.',
@@ -19,7 +19,7 @@ const funFacts = [
 
 function AboutMeContent({ text }: { text: string }) {
   return (
-    <div className="flex items-center justify-center rounded-md border-2 border-gray-600 p-1">
+    <div className="flex items-center justify-center rounded-md border-2 border-gray-600 p-2 text-sm sm:text-base">
       <span>{text}</span>
     </div>
   )
@@ -27,26 +27,29 @@ function AboutMeContent({ text }: { text: string }) {
 
 export function AboutMeSection() {
   return (
-    <div className="flex items-center justify-around gap-8 p-16" id="aboutMe">
-      <div className="flex flex-col items-center justify-center gap-5 text-center">
+    <section
+      id="aboutMe"
+      className="flex flex-col items-center justify-around px-4 py-10 sm:px-8 md:px-16"
+    >
+      <div className="flex flex-col items-center justify-center gap-6 text-center">
         <TitleContainer iconName="CircleUser" text="Sobre mim" />
 
-        <div className="flex w-[80%] flex-col gap-4">
+        <div className="w-full max-w-4xl space-y-4 text-justify text-sm sm:text-base">
           {aboutMeParagraphs.map((text, index) => (
             <p key={index}>{text}</p>
           ))}
         </div>
 
-        <h1 className="font-fira text-accent text-3xl font-bold">
+        <h2 className="font-fira text-accent text-2xl font-bold sm:text-3xl">
           Fatos sobre mim
-        </h1>
+        </h2>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid w-full max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
           {funFacts.map((fact, index) => (
             <AboutMeContent key={index} text={fact} />
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
