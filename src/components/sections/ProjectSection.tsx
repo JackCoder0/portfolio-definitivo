@@ -30,7 +30,7 @@ function ProjectCard({
       </div>
 
       {icons && icons.length > 0 && (
-        <div className="flex items-center justify-center gap-2">
+        <div className="grid grid-cols-4 items-center gap-4">
           {icons.map((icon, index) => (
             <div
               key={index}
@@ -102,6 +102,36 @@ export function ProjectsSection() {
             liveLink="https://github.com/JackCoder0/DevTalkAPI"
             githubLink="https://github.com/JackCoder0/DevTalkAPI"
             icons={['PythonOriginal', 'FastapiOriginal']}
+          />
+
+          <ProjectCard
+            title="DevTalk"
+            description="Uma ferramenta de aprendezagem de idiomas focado em desenvolvedores. Isso é um projeto da faculdade de uma plataforma de idiomas. (Novas features estão a caminho)"
+            liveLink="https://devtalk-one.vercel.app/"
+            githubLink="https://github.com/JackCoder0/devtalk"
+            icons={[
+              'ReactOriginal',
+              'TypescriptOriginal',
+              'FirebaseOriginal',
+              'TailwindcssOriginal',
+              'SiShadcnui',
+              'VitejsOriginal',
+            ]}
+          />
+
+          <ProjectCard
+            title="VibYuu"
+            description="Uma ferramenta completa de recomendação de midias de entretenimento, como filmes, séries e músicas com base em suas preferências. (Em desenvolvimento)"
+            liveLink="https://www.vibyuu.com/"
+            githubLink="https://www.linkedin.com/posts/jackson-silva-coder_buildinpublic-saas-nextjs-activity-7328488978318360576-ZW7N?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrxuasBDfvO5WdWMf280MxJM7JbKImICPQ"
+            icons={[
+              'NextjsOriginal',
+              'FirebaseOriginal',
+              'TailwindcssOriginal',
+              'SiShadcnui',
+              'NodejsOriginal',
+              'SocketioOriginal',
+            ]}
           />
         </div>
       </div>
