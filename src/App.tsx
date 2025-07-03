@@ -9,6 +9,7 @@ import { EducationSection } from './components/sections/EducationSection'
 import { HomeSection } from './components/sections/HomeSection'
 import { ProjectsSection } from './components/sections/ProjectSection'
 import { SkillsSection } from './components/sections/SkillsSection'
+import { ThemeProvider } from './components/theme-provider'
 
 // TODO: Adicionar animações
 // TODO: Adicionar Theme Toggle
@@ -23,32 +24,34 @@ import { SkillsSection } from './components/sections/SkillsSection'
 export function App() {
   return (
     <>
-      <Header />
-      <Navbar />
+      <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+        <Header />
+        <Navbar />
 
-      <main className="w-full px-4 sm:px-6 md:px-10" id="home">
-        {/* Home Section */}
-        <HomeSection />
+        <main className="w-full px-4 sm:px-6 md:px-10" id="home">
+          {/* Home Section */}
+          <HomeSection />
 
-        {/* About Me Section */}
-        <AboutMeSection />
+          {/* About Me Section */}
+          <AboutMeSection />
 
-        {/* Education/Experiencie Section */}
-        <EducationSection />
+          {/* Education/Experiencie Section */}
+          <EducationSection />
 
-        {/* Skills Section */}
-        <SkillsSection />
+          {/* Skills Section */}
+          <SkillsSection />
 
-        {/* Projects Section */}
-        <ProjectsSection />
+          {/* Projects Section */}
+          <ProjectsSection />
 
-        {/* Contact Section */}
-        <ContactSection />
+          {/* Contact Section */}
+          <ContactSection />
 
-        <footer className="border-primary mb-18 flex items-center justify-center border-t py-4 text-center text-sm text-gray-500 md:mb-0">
-          Copyright © Jackson Silva · 2025
-        </footer>
-      </main>
+          <footer className="border-primary mb-18 flex items-center justify-center border-t py-4 text-center text-sm text-gray-500 md:mb-0">
+            Copyright © Jackson Silva · 2025
+          </footer>
+        </main>
+      </ThemeProvider>
     </>
   )
 }

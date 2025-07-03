@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import logoHeader from '@/assets/Logo.svg'
 
 import { DynamicIcon } from './DynamicIcon'
+import { ModeToggle } from './mode-toggle'
 
 interface HeaderIconProps {
   iconName: any
@@ -126,6 +127,8 @@ export function Header() {
           ))}
         </div>
       )}
+
+      <ModeToggle />
 
       <div className="hidden md:flex"></div>
     </header>
