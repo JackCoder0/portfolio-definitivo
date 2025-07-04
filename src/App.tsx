@@ -1,6 +1,6 @@
 import './index.css'
 
-import { Header } from './components/Header'
+import { Header } from './components/nav-bar'
 import { Navbar } from './components/Navbar'
 import { AboutMeSection } from './components/sections/AboutMeSection'
 import { ContactSection } from './components/sections/ContactSection'
@@ -25,8 +25,8 @@ export function App() {
   return (
     <>
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-        <Header />
         <Navbar />
+        <Header />
 
         <main className="w-full px-4 sm:px-6 md:px-10" id="home">
           {/* Home Section */}
