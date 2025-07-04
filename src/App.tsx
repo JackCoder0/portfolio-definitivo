@@ -1,5 +1,7 @@
 import './index.css'
 
+import { Drill, Hammer } from 'lucide-react'
+
 import { Header } from './components/nav-bar'
 import { Navbar } from './components/Navbar'
 import { AboutMeSection } from './components/sections/AboutMeSection'
@@ -29,6 +31,12 @@ export function App() {
         <Navbar />
 
         <main className="w-full px-4 sm:px-6 md:px-10" id="home">
+          <div className="bg-muted border-muted-foreground mx-auto my-0 mt-4 flex max-w-xs items-center justify-center gap-2 rounded-lg border p-2 text-sm">
+            <Hammer />
+            <p>Estamos passando por mudanças</p>
+            <Drill className="scale-x-[-1]" />
+          </div>
+
           {/* Home Section */}
           <HomeSection />
 
