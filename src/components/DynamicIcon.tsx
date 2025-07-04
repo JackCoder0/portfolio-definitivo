@@ -1,4 +1,4 @@
-import { SearchX } from 'lucide-react'
+import { X } from 'lucide-react'
 import { HTMLAttributes } from 'react'
 
 import { iconLibraries } from '@/lib/iconLibraries'
@@ -24,8 +24,7 @@ export const DynamicIcon = ({
     }
   }
 
-  if (!IconComponent) {
-    return <SearchX size={size} className="text-red-500" />
-  }
+  if (!IconComponent) return <X size={size} className="text-red-500" />
+
   return <IconComponent size={size} className={className} {...props} />
 }

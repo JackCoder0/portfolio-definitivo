@@ -25,8 +25,8 @@ export function App() {
   return (
     <>
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-        <Navbar />
         <Header />
+        <Navbar />
 
         <main className="w-full px-4 sm:px-6 md:px-10" id="home">
           {/* Home Section */}
